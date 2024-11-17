@@ -4,60 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Mockado</title>
+    <title>Arduino Monitor Server</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-
-        input {
-            width: -moz-available;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: rgb(31, 41, 55);
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            margin-top: 15px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="login-container">
-        <h1 style="text-align: center;">Arduino Monitor Server</h1>
+        <h1>Arduino Monitor Server</h1>
         <h2>Login</h2>
         <form id="loginForm">
             <label for="username">Usuário</label>
@@ -67,23 +21,7 @@
             <button type="submit">Entrar</button>
         </form>
     </div>
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Previne o envio padrão do formulário
-
-            // Login mockado, aceita qualquer dado
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            if (username && password) {
-                // Redireciona para a página do dashboard
-                window.location.href = "dashboard.html";
-            } else {
-                alert("Por favor, preencha os campos.");
-            }
-        });
-
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
